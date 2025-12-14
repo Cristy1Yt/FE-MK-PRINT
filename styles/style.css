@@ -1610,7 +1610,7 @@ border-radius: 24px;
     padding: 0;
     gap: 1rem;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .logo {
@@ -1646,6 +1646,7 @@ border-radius: 24px;
 
   .footer-bottom-content {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
 
