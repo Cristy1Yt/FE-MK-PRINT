@@ -157,7 +157,7 @@ const products = [
     category: "Printuri decorative",
     name: "TABLOU ROLL",
     description: "Material textil|diverse dimensiuni|",
-    price: 60,
+    price: 70,
     currency: "RON"
   },
   {
