@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MK Print — studio creativ modern specializat în print profesional și promovare digitală. Transformăm brandurile prin design inovator și strategii inteligente de comunicare online." />
+    <meta name="keywords" content="MK Print, print, web development, aplicații mobile, promovare digitală, branding, design, publicitate" />
+    <meta name="author" cont   ent="MK Print" />
+    <meta property="og:description" content="MK Print — studio creativ modern specializat în print profesional și promovare digitală"/>
+    <link rel="icon" type="image/png" href="../assets-magazin/img/logo.jpeg">
+    <link rel="stylesheet" href="./style.css">
+    <title>MK PRINT</title>
+</head>
+<body>
+
+<header class="header">
+      <div class="nav-container">
+         <div class="logo-box">
+            <a class="logo-text" href="../../../index.html"><span class="logo-span-1">MK</span> <span class="logo-span-2">PRINT</span></a>
+         </div>
+         <div class="both-navigations">
+         <div class="navigation-box">
+            <p class="nav-text">Cart</p>
+            <div class="nav-ul">
+              <button class="span-icon-btn ">
+                <span class="span-icon"></span>
+                <span class="span-icon"></span>
+            </button>
+            </div>
+         </div>
+
+         <div class="second-nav" id="second-nav" >
+            <ul class="main-ul" role="list">
+               <li ><a href="../index.html"class="main-ul-li">Magazin</a></li>
+               <li ><a href="../../DigitalServices/services.html"class="main-ul-li">Servicii Digitale</a></li>
+               <li ><a href="https://empty-dew-930.linkyhost.com"class="main-ul-li">Organigramă </a></li>
+               <li ><a href="../../blog/index.html"class="main-ul-li">Năutăți</a></li>
+               
+            </ul>
+              <div class="bar"></div>
+            <button class="btn-contact-nav"><a href="tel: 0237212544"class="contact-button">Contact</a></button>
+         </div>
+      </div>
+         
+         <div class="socials">
+            <div class="circle icon-fb"><a href="https://www.facebook.com/share/1AWmuTHkoC/?mibextid=wwXIfr"><ion-icon name="logo-facebook"  class="icon-socials"></ion-icon></a></div>
+            <div class="circle icon-ig"><a href="https://www.instagram.com/mkprint.fe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram" class="icon-socials"></ion-icon></a></div>
+            <div class="circle icon-nb"><a href="tel: 0237212544"><ion-icon name="call-outline"  class="icon-socials"></ion-icon></a></div>
+         </div>
+      </div>
+     
+    </header>
+    <main>
+      <section class="cart-area">
+          <div class="container">
+      <div class="shoppingCart">
+        <h1>Coș de Cumpărături</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Produs</th>
+              <th class="price">Mărime</th>
+              <th>Cantitate</th>
+              <th class="subtotal">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+
+     
+
+        <div class="giftCardsWrapper">
+          <h3>Card Cadou</h3>
+          <div class="giftCards">
+            <input type="text" placeholder="Adaugă Card Cadou ">
+            <button>Adaugă</button>
+          </div>
+        </div>
+
+        <div class="discountCodeWrapper">
+          <h3> Cod de Reducere</h3>
+          <div class="discountCode">
+            <input type="text" placeholder="Adaugă Cod De Reducere">
+            <button>Adaugă</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="orderSummary">
+        <h2>Detalii Livrare</h2>
+        <div class="shippingOptions">
+          
+          <label>Țară</label>
+          <select>
+            <option>România</option>
+          </select>
+          <label>Oraș</label>
+          <select>
+            <option value="">Selectează oraș</option>
+
+<!-- Alba -->
+<option value="alba">Alba Iulia</option>
+
+<!-- Arad -->
+<option value="arad">Arad</option>
+
+<!-- Argeș -->
+<option value="pitesti">Pitești</option>
+<option value="curtea-de-arges">Curtea de Argeș</option>
+
+<!-- Bacău -->
+<option value="bacau">Bacău</option>
+<option value="onesti">Onești</option>
+
+<!-- Bihor -->
+<option value="oradea">Oradea</option>
+<option value="salonta">Salonta</option>
+
+<!-- Bistrița-Năsăud -->
+<option value="bistrita">Bistrița</option>
+<option value="nasaud">Năsăud</option>
+
+<!-- Botoșani -->
+<option value="botosani">Botoșani</option>
+<option value="dorohoi">Dorohoi</option>
+
+<!-- Brașov -->
+<option value="brasov">Brașov</option>
+<option value="fagaras">Făgăraș</option>
+
+<!-- Brăila -->
+<option value="braila">Brăila</option>
+<option value="galati">Galați</option>
+
+<!-- Buzău -->
+<option value="buzau">Buzău</option>
+<option value="ramnicu-sarat">Râmnicu Sărat</option>
+
+<!-- Caraș-Severin -->
+<option value="resita">Reșița</option>
+<option value="caransebes">Caransebeș</option>
+
+<!-- Calarași -->
+<option value="calarasi">Călărași</option>
+<option value="oltenita">Oltenița</option>
+
+<!-- Cluj -->
+<option value="cluj-napoca">Cluj-Napoca</option>
+<option value="turda">Turda</option>
+<option value="dej">Dej</option>
+
+<!-- Constanța -->
+<option value="constanta">Constanța</option>
+<option value="mangalia">Mangalia</option>
+
+<!-- Covasna -->
+<option value="sfantu-gheorghe">Sfântu Gheorghe</option>
+<option value="odorheiu-secuiesc">Odorheiu Secuiesc</option>
+
+<!-- Dâmbovița -->
+<option value="targoviste">Târgoviște</option>
+<option value="gaesti">Găești</option>
+
+<!-- Dolj -->
+<option value="craiova">Craiova</option>
+<option value="calafat">Călafat</option>
+
+<!-- Dondu -->
+<option value="dondu">Dondu</option>
+
+<!-- Galați -->
+<option value="galati">Galați</option>
+<option value="tecuci">Tecuci</option>
+
+<!-- Giurgiu -->
+<option value="giurgiu">Giurgiu</option>
+
+<!-- Gorj -->
+<option value="targu-jiu">Târgu Jiu</option>
+<option value="motru">Motru</option>
+
+<!-- Harghita -->
+<option value="miercurea-ciuc">Miercurea Ciuc</option>
+<option value="odorheiu-secuiesc">Odorheiu Secuiesc</option>
+
+<!-- Hunedoara -->
+<option value="deva">Deva</option>
+<option value="hunedoara">Hunedoara</option>
+<option value="lupeni">Lupeni</option>
+
+<!-- Ialomița -->
+<option value="slobozia">Slobozia</option>
+
+<!-- Iași -->
+<option value="iasi">Iași</option>
+<option value="pascani">Pașcani</option>
+
+<!-- Ilfov -->
+<option value="buftea">Buftea</option>
+<option value="voluntari">Voluntari</option>
+<option value="chitila">Chițila</option>
+
+<!-- Maramureș -->
+<option value="baia-mare">Baia Mare</option>
+<option value="satu-mare">Satu Mare</option>
+
+<!-- Mehedinți -->
+<option value="drobeta-turnu-severin">Drobeta-Turnu Severin</option>
+
+<!-- Mureș -->
+<option value="targu-mures">Târgu Mureș</option>
+<option value="sighisoara">Sighișoara</option>
+
+<!-- Neamț -->
+<option value="piatra-neamt">Piatra Neamț</option>
+<option value="roman">Roman</option>
+
+<!-- Olt -->
+<option value="slatina">Slatina</option>
+<option value="caracal">Caracal</option>
+
+<!-- Prahova -->
+<option value="ploiesti">Ploiești</option>
+<option value="campina">Câmpina</option>
+
+<!-- Sălaj -->
+<option value="zalau">Zalau</option>
+
+<!-- Satu Mare -->
+<option value="satu-mare">Satu Mare</option>
+
+<!-- Sibiu -->
+<option value="sibiu">Sibiu</option>
+<option value="mediaș">Mediaș</option>
+
+<!-- Suceava -->
+<option value="suceava">Suceava</option>
+<option value="falticeni">Fălticeni</option>
+
+<!-- Teleorman -->
+<option value="alexandria">Alexandria</option>
+<option value="turnu-magurele">Turnu Măgurele</option>
+
+<!-- Timiș -->
+<option value="timisoara">Timișoara</option>
+<option value="lugoj">Lugoj</option>
+
+<!-- Tulcea -->
+<option value="tulcea">Tulcea</option>
+
+<!-- Vâlcea -->
+<option value="ramnicu-valcea">Râmnicu Vâlcea</option>
+
+<!-- Vaslui -->
+<option value="vaslui">Vaslui</option>
+<option value="barlad">Bârlad</option>
+
+<!-- Vrancea -->
+<option value="focsani">Focșani</option>
+<option value="adjud">Adjud</option>
+
+<!-- București -->
+<option value="bucuresti">București</option>
+          </select>
+          <label>Comună</label>
+          <select>
+            <option value="">Selectează comună</option>
+
+<!-- Alba -->
+<option value="abrud">Abrud</option>
+<option value="albac">Albac</option>
+<option value="almaș">Almaș</option>
+<option value="ampoi">Ampoi</option>
+<option value="aninoasa">Aninoasa</option>
+<option value="apold">Apold</option>
+<option value="arădeeni">Arădeeni</option>
+<option value="ardeu">Ardeu</option>
+<option value="argentarola">Argentarola</option>
+<option value="arini">Arini</option>
+<option value="arisibi">Arisibi</option>
+<option value="aromania">Aromania</option>
+<option value="arsuri">Arsuri</option>
+<option value="aspang">Aspang</option>
+<option value="astra">Astra</option>
+<option value="avram-iancu">Avram Iancu</option>
+<option value="axente-sever">Axente Sever</option>
+<option value="baia-de-aries">Baia de Arieș</option>
+<option value="baia-alba">Baia Alba</option>
+<option value="baia-sprie">Baia Sprie</option>
+
+<!-- Arad -->
+<option value="adea">Adea</option>
+<option value="ailita">Ailita</option>
+<option value="alfold">Alfold</option>
+<option value="almăș-nord">Almăș Nord</option>
+<option value="almășu-mic">Almășu Mic</option>
+<option value="almășu-nou">Almășu Nou</option>
+<option value="amărești">Amărești</option>
+<option value="andrid">Andrid</option>
+<option value="angheluș">Angheluș</option>
+<option value="apa">Apa</option>
+<option value="apahida">Apahida</option>
+<option value="arad-nou">Arad Nou</option>
+<option value="ardeu">Ardeu</option>
+<option value="arenișu">Arenișu</option>
+<option value="ariu">Ariu</option>
+
+<!-- Argeș -->
+<option value="albota">Albota</option>
+<option value="ancuța">Ancuța</option>
+<option value="aninoasa-arges">Aninoasa</option>
+<option value="apostolache">Apostolache</option>
+<option value="apșa-de-sus">Apșa de Sus</option>
+<option value="arăncuț">Arăncuț</option>
+<option value="ariceștii-ovideni">Ariceștii Ovideni</option>
+<option value="ariceștii-zarnesteni">Ariceștii Zarnesteni</option>
+<option value="arpășel">Arpășel</option>
+<option value="așchilești">Așchilești</option>
+
+<!-- Bacău -->
+<option value="agas">Agas</option>
+<option value="ardeleanu">Ardeleanu</option>
+<option value="asău">Asău</option>
+<option value="aureleni">Aureleni</option>
+<option value="bakhala">Bakhala</option>
+<option value="balesti">Băicești</option>
+<option value="balintesti">Bălinești</option>
+<option value="barbosi">Bărbosi</option>
+
+<!-- Bihor -->
+<option value="alesd">Aleșd</option>
+<option value="almașu-mic">Almașu Mic</option>
+<option value="alunis-bihor">Alunis</option>
+<option value="amesteni">Amesteni</option>
+<option value="amezeaga">Amezeaga</option>
+<option value="anig">Anig</option>
+<option value="apaid">Apaid</option>
+<option value="apateu">Apateu</option>
+
+<!-- Bistrița-Năsăud -->
+<option value="adas">Adas</option>
+<option value="agârbiciu">Agârbiciu</option>
+<option value="aimeni">Aimeni</option>
+<option value="albac-bn">Albac</option>
+<option value="almasu-bn">Almași</option>
+<option value="anini-bn">Anini</option>
+
+<!-- Botoșani -->
+<option value="aendești">Aendești</option>
+<option value="agapia">Agapia</option>
+<option value="agârbiciu-botosani">Agârbiciu</option>
+<option value="aileni-botosani">Aileni</option>
+<option value="albești-botosani">Albești</option>
+<option value="balan-botosani">Bălan</option>
+<option value="balcauti">Bâlcăuți</option>
+<option value="baltatesti">Băltățești</option>
+
+<!-- Brașov -->
+<option value="balan-brasov">Bălan</option>
+<option value="bârsa">Bârsa</option>
+<option value="bârghiș">Bârghiș</option>
+<option value="baile-olanesti">Baile Olănești</option>
+<option value="baile-olanesti-brasov">Baile Olănești</option>
+<option value="bascov">Băscov</option>
+
+<!-- Brăila -->
+<option value="albești-braila">Albești</option>
+<option value="chiscareni">Chiscareni</option>
+<option value="dranov">Dranov</option>
+<option value="favona">Făvona</option>
+
+<!-- Buzău -->
+<option value="agigea-buzau">Agigea</option>
+<option value="albești-buzau">Albești</option>
+<option value="almăjelo">Almăjelo</option>
+<option value="amara-buzau">Amara</option>
+<option value="amurești">Amurești</option>
+
+<!-- Caraș-Severin -->
+<option value="anina">Anina</option>
+<option value="bazoș">Bazoș</option>
+<option value="băile-herculane">Băile Herculane</option>
+<option value="baru-bstrada">Baru Brada</option>
+<option value="berlești">Berlești</option>
+
+<!-- Călărași -->
+<option value="amara-calarasi">Amara</option>
+<option value="andrășești">Andrășești</option>
+<option value="babadag">Babadag</option>
+<option value="banari">Banari</option>
+
+<!-- Cluj -->
+<option value="aiton">Aiton</option>
+<option value="apahida">Apahida</option>
+<option value="apos">Apos</option>
+<option value="arad-cluj">Arad</option>
+<option value="arieseni">Arieseni</option>
+<option value="atintis">Atintis</option>
+
+<!-- Constanța -->
+<option value="agigea-constanta">Agigea</option>
+<option value="albești-constanta">Albești</option>
+<option value="amara-constanta">Amara</option>
+<option value="andrezina">Andrezina</option>
+
+<!-- Covasna -->
+<option value="aita-serului">Aita Serului</option>
+<option value="alinești">Alinești</option>
+<option value="areni">Areni</option>
+<option value="balan-covasna">Bălan</option>
+
+<!-- Dâmbovița -->
+<option value="aninoasa-dambovita">Aninoasa</option>
+<option value="ariceștii-ovideni-dambovita">Ariceștii Ovideni</option>
+<option value="ariceștii-zarnesteni-dambovita">Ariceștii Zarnesteni</option>
+<option value="arpășești">Arpășești</option>
+<option value="așchilești-dambovita">Așchilești</option>
+
+<!-- Dolj -->
+<option value="aigi">Aigi</option>
+<option value="almăj">Almăj</option>
+<option value="apele">Apele</option>
+<option value="baba-novac">Baba Novac</option>
+
+<!-- Galați -->
+<option value="abrud-galati">Abrud</option>
+<option value="adâncata">Adâncata</option>
+<option value="agigea-galati">Agigea</option>
+<option value="albești-galati">Albești</option>
+
+<!-- Giurgiu -->
+<option value="aduna">Aduna</option>
+<option value="adrianu">Adrianu</option>
+<option value="apele-giurgiu">Apele</option>
+<option value="balta-albă">Balta Albă</option>
+
+<!-- Gorj -->
+<option value="aboineștii-ovideni">Aboineștii Ovideni</option>
+<option value="aboineștii-zarnesteni">Aboineștii Zarnesteni</option>
+<option value="albeni">Albeni</option>
+<option value="almăj-gorj">Almăj</option>
+
+<!-- Harghita -->
+<option value="aita-serutului">Aita Serutului</option>
+<option value="alinești-harghita">Alinești</option>
+<option value="areni-harghita">Areni</option>
+<option value="bălan-harghita">Bălan</option>
+
+<!-- Hunedoara -->
+<option value="aninoasa-hunedoara">Aninoasa</option>
+<option value="ardeu-hunedoara">Ardeu</option>
+<option value="băiteni">Băiteni</option>
+<option value="băuți">Băuți</option>
+
+<!-- Ialomița -->
+<option value="albești-ialomita">Albești</option>
+<option value="amara-ialomita">Amara</option>
+<option value="andrășești-ialomita">Andrășești</option>
+<option value="asău-ialomita">Asău</option>
+
+<!-- Iași -->
+<option value="aninoasa-iasi">Aninoasa</option>
+<option value="aroneanu">Aroneanu</option>
+<option value="asău-iași">Asău</option>
+<option value="băcești">Băcești</option>
+
+<!-- Ilfov -->
+<option value="afumați">Afumați</option>
+<option value="băneasa">Băneasa</option>
+<option value="bărcănești">Bărcănești</option>
+<option value="băuturi">Băuturi</option>
+
+<!-- Maramureș -->
+<option value="almășu">Almășu</option>
+<option value="arini-maramures">Arini</option>
+<option value="asinip">Asinip</option>
+<option value="băiuț">Băiuț</option>
+
+<!-- Mehedinți -->
+<option value="ajmana">Ajmana</option>
+<option value="almăjelo-mehedinti">Almăjelo</option>
+<option value="amărăști">Amărăști</option>
+<option value="apele-mehedinti">Apele</option>
+
+<!-- Mureș -->
+<option value="apold-mures">Apold</option>
+<option value="aramas">Arame</option>
+<option value="ardeu-mures">Ardeu</option>
+<option value="arpășel-mures">Arpășel</option>
+
+<!-- Neamț -->
+<option value="agapia-neamt">Agapia</option>
+<option value="alămași">Alămași</option>
+<option value="aninoasa-neamt">Aninoasa</option>
+<option value="asău-neamt">Asău</option>
+
+<!-- Olt -->
+<option value="adâncata-olt">Adâncata</option>
+<option value="alunis-olt">Alunis</option>
+<option value="amărăști-olt">Amărăști</option>
+<option value="apele-olt">Apele</option>
+
+<!-- Prahova -->
+<option value="albești-prahova">Albești</option>
+<option value="almăj-prahova">Almăj</option>
+<option value="alunu">Alunu</option>
+<option value="aninoasa-prahova">Aninoasa</option>
+
+<!-- Sălaj -->
+<option value="almașu-salaj">Almașu</option>
+<option value="ardud">Ardud</option>
+<option value="aticeș">Aticeș</option>
+<option value="băbeni">Băbeni</option>
+
+<!-- Satu Mare -->
+<option value="acâș">Acâș</option>
+<option value="aluniș">Aluniș</option>
+<option value="andrid-satu-mare">Andrid</option>
+<option value="apșa">Apșa</option>
+
+<!-- Sibiu -->
+<option value="agnita">Agnita</option>
+<option value="alchian">Alchian</option>
+<option value="apold-sibiu">Apold</option>
+<option value="arpășel-sibiu">Arpășel</option>
+
+<!-- Suceava -->
+<option value="adâncata-suceava">Adâncata</option>
+<option value="albești-suceava">Albești</option>
+<option value="almășu-suceava">Almășu</option>
+<option value="aninoasa-suceava">Aninoasa</option>
+
+<!-- Teleorman -->
+<option value="adâncata-teleorman">Adâncata</option>
+<option value="almaj-teleorman">Almaj</option>
+<option value="amara-teleorman">Amara</option>
+<option value="andrășești-teleorman">Andrășești</option>
+
+<!-- Timiș -->
+<option value="almaju">Almaju</option>
+<option value="amărești-timis">Amărești</option>
+<option value="andrag">Andrag</option>
+<option value="andrasfalva">Andrasffalva</option>
+
+<!-- Tulcea -->
+<option value="agigea-tulcea">Agigea</option>
+<option value="alceanu">Alceanu</option>
+<option value="altinova">Altinova</option>
+<option value="amurca">Amurca</option>
+
+<!-- Vâlcea -->
+<option value="alunu-valcea">Alunu</option>
+<option value="apele-valcea">Apele</option>
+<option value="arpășel-valcea">Arpășel</option>
+<option value="aninoasa-valcea">Aninoasa</option>
+
+<!-- Vaslui -->
+<option value="albești-vaslui">Albești</option>
+<option value="almăj-vaslui">Almăj</option>
+<option value="amara-vaslui">Amara</option>
+<option value="aninoasa-vaslui">Aninoasa</option>
+
+<!-- Vrancea -->
+<option value="adjud-comuna">Adjud Comuna</option>
+<option value="agigea-vrancea">Agigea</option>
+<option value="aninoasa-vrancea">Aninoasa</option>
+<option value="apele-vrancea">Apele</option>
+<option value="arpășel-vrancea">Arpășel</option>
+<option value="bărbulești">Bărbulești</option>
+<option value="biliești">Biliești</option>
+<option value="bârghiș-vrancea">Bârghiș</option>
+<option value="copăceanca">Copăceanca</option>
+<option value="didești">Didești</option>
+<option value="dumbrăveni-vrancea">Dumbrăveni</option>
+<option value="fârtănești">Fârtănești</option>
+<option value="gherghești">Gherghești</option>
+<option value="grindu">Grindu</option>
+<option value="gurghiu-vrancea">Gurghiu</option>
+<option value="hodivoaia">Hodivoaia</option>
+<option value="iacobeni">Iacobeni</option>
+<option value="jidanul-mic">Jidanul Mic</option>
+<option value="jidanul-mare">Jidanul Mare</option>
+<option value="jorești">Jorești</option>
+<option value="jupa">Jupa</option>
+<option value="lancrăm">Lancrăm</option>
+<option value="lucești">Lucești</option>
+<option value="melicești">Melicești</option>
+<option value="minzești">Minzești</option>
+<option value="mircești">Mircești</option>
+<option value="movileni">Movileni</option>
+<option value="mujdei">Mujdei</option>
+<option value="nărești">Nărești</option>
+<option value="nechiti">Nechiti</option>
+<option value="odobești-comuna">Odobești Comuna</option>
+<option value="odobeștii-vechi">Odobeștii Vechi</option>
+<option value="olejeni">Olejeni</option>
+<option value="pădureni-vrancea">Pădureni</option>
+<option value="păiseni">Păiseni</option>
+<option value="păuleni">Păuleni</option>
+<option value="pechea">Pechea</option>
+<option value="plopana">Plopana</option>
+<option value="plopeni-vrancea">Plopeni</option>
+<option value="poiana-cristalului">Poiana Cristalului</option>
+<option value="puiești">Puiești</option>
+<option value="răchești">Răchești</option>
+<option value="răducăneni">Răducăneni</option>
+<option value="rânghețel">Rânghețel</option>
+<option value="rișnov-vrancea">Rișnov</option>
+<option value="roțești">Roțești</option>
+<option value="rugănești">Rugănești</option>
+<option value="rușești">Rușești</option>
+<option value="sălești">Sălești</option>
+<option value="sâmbăta-de-jos">Sâmbăta de Jos</option>
+<option value="sâmbor">Sâmbor</option>
+<option value="sâncraieni">Sâncraieni</option>
+<option value="sân-gheorghe-vrancea">Sân Gheorghe</option>
+<option value="sândulești">Sândulești</option>
+<option value="sânzieni">Sânzieni</option>
+<option value="sârbi">Sârbi</option>
+<option value="sarmasu-vrancea">Sarmasu</option>
+<option value="secaria">Secaria</option>
+<option value="șerbănești">Șerbănești</option>
+<option value="șerbănești-vrancea">Șerbănești</option>
+<option value="șerghei">Șerghei</option>
+<option value="șerbești">Șerbești</option>
+<option value="șerdan">Șerdan</option>
+<option value="șerdanu">Șerdanu</option>
+<option value="șerghei-vrancea">Șerghei</option>
+<option value="șimian">Șimian</option>
+<option value="șipoteni">Șipoteni</option>
+<option value="șirești">Șirești</option>
+<option value="șiriu">Șiriu</option>
+<option value="șiștaru">Șiștaru</option>
+<option value="șișteru">Șișteru</option>
+<option value="șoelari">Șoelari</option>
+<option value="șoliștea">Șoliștea</option>
+<option value="șomeni">Șomeni</option>
+<option value="șomești">Șomești</option>
+<option value="șonești">Șonești</option>
+<option value="șoparleni">Șoparleni</option>
+<option value="șopirleni">Șopirleni</option>
+<option value="șopteni">Șopteni</option>
+<option value="șorbani">Șorbani</option>
+<option value="șorbeni">Șorbeni</option>
+<option value="șorbești">Șorbești</option>
+<option value="șorbești-vrancea">Șorbești</option>
+<option value="tăbărești">Tăbărești</option>
+<option value="tașca">Tașca</option>
+<option value="talpe">Talpe</option>
+<option value="tanaga">Tanaga</option>
+<option value="tănase">Tănase</option>
+<option value="tănasele">Tănasele</option>
+<option value="tănăseni">Tănăseni</option>
+<option value="tănești">Tănești</option>
+<option value="tănești-vrancea">Tănești</option>
+<option value="tănești-noi">Tănești Noi</option>
+<option value="tănești-vechi">Tănești Vechi</option>
+<option value="tărâia">Tărâia</option>
+<option value="tăriceanu">Tăriceanu</option>
+<option value="tăriceanu-vrancea">Tăriceanu</option>
+<option value="tătăranu">Tătăranu</option>
+<option value="tătaru-vrancea">Tătaru</option>
+<option value="tătarușani">Tătarușani</option>
+<option value="tătarușani-vrancea">Tătarușani</option>
+<option value="tătarușu">Tătarușu</option>
+<option value="tătarușu-vrancea">Tătarușu</option>
+<option value="tătarušu-nou">Tătarușu Nou</option>
+<option value="tătarušu-vechi">Tătarușu Vechi</option>
+<option value="tătărești">Tătărești</option>
+<option value="tătărești-vrancea">Tătărești</option>
+<option value="tătărești-noi">Tătărești Noi</option>
+<option value="tătărești-vechi">Tătărești Vechi</option>
+<option value="tătărăști">Tătărăști</option>
+<option value="tătărături">Tătărături</option>
+<option value="tătărițe">Tătărițe</option>
+<option value="tătărițe-vrancea">Tătărițe</option>
+<option value="tătărițu">Tătărițu</option>
+<option value="tătărițu-vrancea">Tătărițu</option>
+<option value="tătărițu-mare">Tătărițu Mare</option>
+<option value="tătărițu-mic">Tătărițu Mic</option>
+<option value="tătărني">Tătărni</option>
+<option value="tătărnă">Tătărnă</option>
+<option value="tătârnă">Tătârnă</option>
+<option value="tătârnă-vrancea">Tătârnă</option>
+<option value="tătârnă-albă">Tătârnă Albă</option>
+<option value="tătârnă-neagră">Tătârnă Neagră</option>
+<option value="te-aninoasa">Te Aninoasa</option>
+<option value="tebrianu">Tebrianu</option>
+<option value="tejnă">Tejnă</option>
+<option value="tejnă-vrancea">Tejnă</option>
+<option value="telești">Telești</option>
+<option value="telești-vrancea">Telești</option>
+<option value="telești-noi">Telești Noi</option>
+<option value="telești-vechi">Telești Vechi</option>
+<option value="telilești">Telilești</option>
+<option value="telimănești">Telimănești</option>
+<option value="telina">Telina</option>
+<option value="telina-vrancea">Telina</option>
+<option value="telijă">Telijă</option>
+<option value="telijă-vrancea">Telijă</option>
+<option value="telimanu">Telimanu</option>
+<option value="telimanu-vrancea">Telimanu</option>
+<option value="teli織">Telişi</option>
+<option value="teliști">Teliști</option>
+<option value="teliști-vrancea">Teliști</option>
+<option value="teliștii-jos">Teliștii Jos</option>
+<option value="teliștii-sus">Teliștii Sus</option>
+<option value="teliștii-vechi">Teliștii Vechi</option>
+<option value="teliștii-noi">Teliștii Noi</option>
+<option value="telitei">Telitei</option>
+<option value="telitei-vrancea">Telitei</option>
+<option value="telitei-mic">Telitei Mic</option>
+<option value="telitei-mare">Telitei Mare</option>
+<option value="teliță">Teliță</option>
+<option value="teliță-vrancea">Teliță</option>
+<option value="teliță-albă">Teliță Albă</option>
+<option value="teliță-neagră">Teliță Neagră</option>
+<option value="teliță-nouă">Teliță Nouă</option>
+<option value="teliță-veche">Teliță Veche</option>
+<option value="telniță">Telniță</option>
+<option value="telniță-vrancea">Telniță</option>
+<option value="teloj">Teloj</option>
+<option value="teloj-vrancea">Teloj</option>
+<option value="teloj-albastru">Teloj Albastru</option>
+<option value="teloj-roșu">Teloj Roșu</option>
+<option value="telol">Telol</option>
+<option value="telol-vrancea">Telol</option>
+<option value="telol-de-sus">Telol de Sus</option>
+<option value="telol-de-jos">Telol de Jos</option>
+<option value="telol-de-mijloc">Telol de Mijloc</option>
+<option value="telu">Telu</option>
+<option value="telu-vrancea">Telu</option>
+<option value="telu-mare">Telu Mare</option>
+<option value="telu-mic">Telu Mic</option>
+<option value="telumbasă">Telumbasă</option>
+<option value="telumbasă-vrancea">Telumbasă</option>
+<option value="telumbeț">Telumbeț</option>
+<option value="telumbeț-vrancea">Telumbeț</option>
+<option value="telumeț">Telumeț</option>
+<option value="telumeț-vrancea">Telumeț</option>
+<option value="telumiet">Telumiet</option>
+<option value="telumiet-vrancea">Telumiet</option>
+<option value="telumniești">Telumniești</option>
+<option value="telumniești-vrancea">Telumniești</option>
+<option value="telumniești-vechi">Telumniești Vechi</option>
+<option value="telumniești-noi">Telumniești Noi</option>
+<option value="telumnițe">Telumnițe</option>
+<option value="telumnițe-vrancea">Telumnițe</option>
+<option value="telumoga">Telumoga</option>
+<option value="telumoga-vrancea">Telumoga</option>
+<option value="telumoji">Telumoji</option>
+<option value="telumoji-vrancea">Telumoji</option>
+<option value="telumomț">Telumomț</option>
+<option value="telumomț-vrancea">Telumomț</option>
+<option value="telumoru">Telumoru</option>
+<option value="telumoru-vrancea">Telumoru</option>
+<option value="telumoritei">Telumoritei</option>
+<option value="telumoritei-vrancea">Telumoritei</option>
+<option value="telumorla">Telumorla</option>
+<option value="telumorla-vrancea">Telumorla</option>
+<option value="telumormanu">Telumormanu</option>
+<option value="telumormanu-vrancea">Telumormanu</option>
+<option value="telumorțu">Telumorțu</option>
+<option value="telumorțu-vrancea">Telumorțu</option>
+<option value="telumoscu">Telumoscu</option>
+<option value="telumoscu-vrancea">Telumoscu</option>
+<option value="telumotă">Telumotă</option>
+<option value="telumotă-vrancea">Telumotă</option>
+<option value="telumot">Telumot</option>
+<option value="telumot-vrancea">Telumot</option>
+<option value="telumotra">Telumotra</option>
+<option value="telumotra-vrancea">Telumotra</option>
+<option value="telumotru">Telumotru</option>
+<option value="telumotru-vrancea">Telumotru</option>
+<option value="telumu">Telumu</option>
+<option value="telumu-vrancea">Telumu</option>
+<option value="telumu-de-sus">Telumu de Sus</option>
+<option value="telumu-de-jos">Telumu de Jos</option
+          </select>
+          <label>Cod Poștal</label>
+          <input type="text" placeholder="Cod Poștal">
+          <label>Nume</label>
+          <input type="text" placeholder="Nume">
+          <label>Prenume</label>
+          <input type="text" placeholder="Prenume">
+          <label>Email</label>
+          <input type="text" placeholder="Email">
+            <label>Metoda de Plată</label>
+          <select>
+            <option>Alege o Opțiune</option>
+            <option>Numerar</option>
+            <option>Plata cu Cardul</option>
+          </select>
+        </div>
+        
+       
+        <div class="totalPrice">
+          <p>Subtotal <span>45 Lei</span></p>
+          <p>Shipping <span>16 Lei</span></p>
+          <p class="total"> Total <span>61 Lei</span></p>
+        </div>
+        <div class="proceed_section">
+          <button>Finalizează Comanda</button>
+          <span>Verifică Adresa De Livrare</span>
+        </div>
+      </div>
+    </div>
+      </section>
+    </main>
+     <footer class="footer">
+  <div class="container footer-content">
+
+    <div class="footer-column">
+       <div class="logo-box">
+             <a href="../../../index.html"class="logo">MK PRINT</a>
+         </div>
+       
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-title">Utile</h3>
+      <ul class="footer-list">
+        <li><a href="https://empty-dew-930.linkyhost.com" class="legal-link">Organigramă</a></li>
+        <li><a href="https://black-grass-839.linkyhost.com" class="legal-link">Certificat de Înregistrare</a></li>
+        <li><p class="legal-link">L - J : 08:00 - 16:30 </p></li>
+        <li><p class="legal-link"> V : 08:00 - 16:00 </p></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-title">Pentru Clienți</h3>
+      <ul class="footer-list">
+        <li><a href="../index.html" class="legal-link">Magazin</a></li>
+        <li><a href="../../DigitalServices/services.html" class="legal-link">Servicii Digitale</a></li>
+        <li><a href="../../blog/index.html" class="legal-link">Năutăți</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3 class="footer-title">Date de Contact</h3>
+      <ul class="footer-list">
+        <li><a href="mailto:fe.mk.print.c@gmail.com" class="legal-link"><ion-icon name="mail-open-outline"></ion-icon> fe.mk.print.c@gmail.com</a></li>
+        <li><a href="tel: 0237212544" class="legal-link"><ion-icon name="call-outline"  class="icon-socials"></ion-icon>0237212544</a></li>
+        <li><p class="legal-link"> <ion-icon name="pin-outline"></ion-icon> Bulevardul Gării 25, Focșani 627350</p></li>
+       
+      </ul>
+    </div>
+
+     
+
+  </div>
+
+   <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <div class="copyright">
+          <p>&copy; <span class="year">2027</span> MK PRINT</p>
+         
+        </div>
+        <div class="legal-links">
+          <a href="../../terms/terms.html" class="legal-link">Privacy Policy</a>
+          <a href="../../terms/terms.html" class="legal-link">Terms & Conditions</a>
+          <a href="../../terms/terms.html" class="legal-link">Cookie Policy</a>
+          
+        </div>
+         <div class="socials-footer">
+          <div class="circle"><a href="https://www.instagram.com/mkprint.fe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" ><ion-icon name="logo-instagram" class="icon-socials"></ion-icon></a></div>
+           <div class="circle icon-fb"><a href="https://www.facebook.com/share/1AWmuTHkoC/?mibextid=wwXIfr"><ion-icon name="logo-facebook"  class="icon-socials"></ion-icon></a></div>
+            <div class="circle icon-nb"><a href="tel: 0237212544"><ion-icon name="call-outline"  class="icon-socials"></ion-icon></a></div>
+        </div>
+      </div>
+    </div>
+
+</footer> 
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../productPage/products.js" ></script>
+
+</html>
