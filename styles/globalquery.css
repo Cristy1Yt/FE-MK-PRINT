@@ -556,7 +556,7 @@ a{
 }
 .sliders .item{
   font-size: 1.2rem;
-  left: max(calc(100px * 8), 100%);
+  left: max(calc(100px * 7), 100%);
 
 }
 
@@ -810,6 +810,23 @@ display: none;
  position: absolute;
 }
 
+.sliders .item {
+    width: 150px;           /* Reduce de la 300px */
+    height: 80px;           /* Reduce de la 100px */
+    font-size: 0.8rem;      /* Reduce de la 1.5rem */
+    left: max(calc(150px * 7), 100%);  /* Ajustează left */
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-2100px);   /* 150px * 7 * 2 */
+    }
+  }
+
+
 .wrapper-2 .item{
     width: 150px;
     height: 200px;
@@ -879,6 +896,5 @@ product-tumb{
 .blog-content{
   align-items: center;
   gap:3rem
-}
+}}
 
-}
