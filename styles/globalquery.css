@@ -705,7 +705,7 @@ a{
 
 
 
-@media screen and  (max-width:414px){
+@media screen and  (max-width:430px){
 
 #hero{
     height:auto;
@@ -811,14 +811,14 @@ display: none;
 }
 
 .wrapper-2 .item{
-    animation-duration: 30s;
+    animation-duration: 20s;
 }
 @keyframes scrollLeft2 {
         from {
             transform: translateX(0);
         }
         to {
-            transform: translateX(-1400px);
+            transform: translateX(-1000px);
         }
     }
 
