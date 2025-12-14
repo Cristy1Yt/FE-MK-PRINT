@@ -811,14 +811,16 @@ display: none;
 }
 
 .wrapper-2 .item{
-    animation-duration: 30s;
+    width: 150px;
+    height: 200px;
+    animation-duration: 25s;
 }
 @keyframes scrollLeft2 {
         from {
             transform: translateX(0);
         }
         to {
-            transform: translateX(-2000px);
+            transform: translateX(-1000px);
         }
     }
 
