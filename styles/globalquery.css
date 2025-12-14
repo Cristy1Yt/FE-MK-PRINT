@@ -814,8 +814,7 @@ display: none;
 
 
 .wrapper-2 .item{
-    width: 150px;
-    height: 200px;
+
     animation-duration: 25s;
 }
 @keyframes scrollLeft2 {
