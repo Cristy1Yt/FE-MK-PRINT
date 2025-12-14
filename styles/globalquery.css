@@ -555,8 +555,8 @@ a{
  font-weight: 400;
 }
 .sliders .item{
-  font-size: 1.2rem;
-  left: max(calc(100px * 8), 100%);
+  font-size: 1rem;
+  left: max(calc(80px * 8), 100%);
 
 }
 
