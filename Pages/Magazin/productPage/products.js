@@ -61,8 +61,17 @@ const products = [
     price: 115,
     currency: "RON"
   },
+
   {
     id: "B005",
+    showcaseImage:'../assets-magazin/img/img6.png',
+    category: "Accesorii",
+    name: "ȘAPCĂ PERSONALIZATĂ",
+    description: "Practică și rezistentă",
+    price: 35,
+    currency: "RON"
+  },{
+  id: "B006",
     showcaseImage:'../assets-magazin/img/img5.png',
     category: "Accesorii",
     name: "TOTE BAG",
@@ -71,21 +80,12 @@ const products = [
     currency: "RON"
   },
   {
-    id: "B006",
-    showcaseImage:'../assets-magazin/img/img6.png',
-    category: "Accesorii",
-    name: "ȘAPCĂ PERSONALIZATĂ",
-    description: "Practică și rezistentă",
-    price: 35,
-    currency: "RON"
-  },
-  {
     id: "C001",
     showcaseImage:'../assets-magazin/img/img7.png',
     category: "Materiale promoționale",
     name: "STICKER",
     description: "Autocolant colorat, forme diverse",
-    price: 1,
+    price: 4,
     currency: "RON"
   },
   {
@@ -94,7 +94,7 @@ const products = [
     category: "Materiale promoționale",
     name: "STICKERE TĂIATE LA FORMĂ",
     description: "Vinil premium, decupare precisă",
-    price: 2,
+    price: 6,
     currency: "RON"
   },
   {
@@ -130,11 +130,11 @@ const products = [
     category: "Materiale promoționale",
     name: "ROLL-UP PUBLICITAR",
     description: "Structură aluminiu + print PVC, 85x200 cm",
-    price: 160,
+    price: 750,
     currency: "RON"
   },
   {
-    id: "D001",
+    id: "C007",
     showcaseImage:'../assets-magazin/img/img13.png',
     category: "Printuri decorative",
     name: "TABLOU RAMĂ DIN LEMN",
@@ -143,7 +143,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "D002",
+    id: "C008",
     showcaseImage:'../assets-magazin/img/img14.png',
     category: "Printuri decorative",
     name: "TABLOU CANVAS",
@@ -152,7 +152,16 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E001",
+    id: "C009",
+    showcaseImage:'../assets-magazin/img/img21.png',
+    category: "Printuri decorative",
+    name: "TABLOU ROLL",
+    description: "Material textil|diverse dimensiuni|",
+    price: 60,
+    currency: "RON"
+  },
+  {
+    id: "C0010",
     showcaseImage:'../assets-magazin/img/img15.png',
     category: "Produse personalizate",
     name: "CANĂ PERSONALIZATĂ",
@@ -161,7 +170,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E002",
+    id: "C0011",
     showcaseImage:'../assets-magazin/img/img6.png',
     category: "Produse personalizate",
     name: "BRELOC PERSONALIZAT",
@@ -170,7 +179,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E003",
+    id: "C0012",
     showcaseImage:'../assets-magazin/img/img7.png',
     category: "Produse personalizate",
     name: "PUZZLE PERSONALIZAT",
@@ -179,7 +188,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E004",
+    id: "C0013",
     showcaseImage:'../assets-magazin/img/img18.png',
     category: "Produse personalizate",
     name: "MAGNET FRIGIDER",
@@ -188,7 +197,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E005",
+    id: "C0014",
     showcaseImage:'../assets-magazin/img/img19.png',
     category: "Produse personalizate",
     name: "PERNĂ PERSONALIZATĂ",
@@ -197,7 +206,7 @@ const products = [
     currency: "RON"
   },
   {
-    id: "E006",
+    id: "C0011",
     showcaseImage:'../assets-magazin/img/img20.png',
     category: "Produse personalizate",
     name: "TERMOS PERSONALIZAT",
