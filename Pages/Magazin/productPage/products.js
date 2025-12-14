@@ -54,7 +54,7 @@ const products = [
   },
   {
     id: "B004",
-    showcaseImage:'..assets-magazin/img/img4.png',
+    showcaseImage:'../assets-magazin/img/img4.png',
     category: "Hanorace",
     name: "HANORAC CU GLUGĂ",
     description: "Moale, călduros și modern",
@@ -153,7 +153,7 @@ const products = [
   },
   {
     id: "C009",
-    showcaseImage:'../assets-magazin/img/img21.png',
+    showcaseImage:'../assets-magazin/img/img15.png',
     category: "Printuri decorative",
     name: "TABLOU ROLL",
     description: "Material textil|diverse dimensiuni|",
@@ -162,7 +162,7 @@ const products = [
   },
   {
     id: "C0010",
-    showcaseImage:'../assets-magazin/img/img15.png',
+    showcaseImage:'../assets-magazin/img/img16.png',
     category: "Produse personalizate",
     name: "CANĂ PERSONALIZATĂ",
     description: "Ceramică 330 ml, ideală pentru cadouri",
@@ -171,7 +171,7 @@ const products = [
   },
   {
     id: "C0011",
-    showcaseImage:'../assets-magazin/img/img6.png',
+    showcaseImage:'../assets-magazin/img/img17.png',
     category: "Produse personalizate",
     name: "BRELOC PERSONALIZAT",
     description: "Metal sau plastic, diverse forme",
@@ -180,7 +180,7 @@ const products = [
   },
   {
     id: "C0012",
-    showcaseImage:'../assets-magazin/img/img7.png',
+    showcaseImage:'../assets-magazin/img/img18.png',
     category: "Produse personalizate",
     name: "PUZZLE PERSONALIZAT",
     description: "120–500 piese, cadou creativ",
@@ -189,7 +189,7 @@ const products = [
   },
   {
     id: "C0013",
-    showcaseImage:'../assets-magazin/img/img18.png',
+    showcaseImage:'../assets-magazin/img/img19.png',
     category: "Produse personalizate",
     name: "MAGNET FRIGIDER",
     description: "Colorat și rezistent, PVC/lemn",
@@ -198,7 +198,7 @@ const products = [
   },
   {
     id: "C0014",
-    showcaseImage:'../assets-magazin/img/img19.png',
+    showcaseImage:'../assets-magazin/img/img20.png',
     category: "Produse personalizate",
     name: "PERNĂ PERSONALIZATĂ",
     description: "40x40 cm, poliester/bumbac",
@@ -206,8 +206,8 @@ const products = [
     currency: "RON"
   },
   {
-    id: "C0011",
-    showcaseImage:'../assets-magazin/img/img20.png',
+    id: "C0015",
+    showcaseImage:'../assets-magazin/img/img21.png',
     category: "Produse personalizate",
     name: "TERMOS PERSONALIZAT",
     description: "Oțel/aluminiu, 500–750 ml",
