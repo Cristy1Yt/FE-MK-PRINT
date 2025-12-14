@@ -290,7 +290,7 @@ function updateCartTable() {
     row.innerHTML = `
       <td class="imageTitle">
         <img src="${item.image}" alt="${item.name}" style="width: 60px; height: auto;">
-        <p>${item.name}</p>
+        <p ">${item.name}</p>
       </td>
       <td class="price">${item.size}</td>
       <td class="qty">

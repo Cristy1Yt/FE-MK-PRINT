@@ -542,7 +542,7 @@ margin-left: 10px;
     
 
     .imageTitle p{
-     font-size: clamp(13px, 3.2vw, 15px);
+     font-size: clamp(0.6rem, 1vw, 1rem);
       font-family: 'Inter' ,sans-serif ;
       font-weight: 500;
     }
@@ -568,6 +568,7 @@ margin-left: 10px;
     font-size: 14px;
   }
   .price, .subtotal {
+    font-size: clamp(0.8rem, 1vw, 1rem);
     text-align: right;
   }
   .qty input {
@@ -779,7 +780,7 @@ font-weight: 400;
 }
 
 /* ==================================================================Media Query for Mobile Screens============================================================= */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 716px) {
     
   .cart-area{
     padding: 1rem 2rem;
@@ -790,7 +791,7 @@ font-weight: 400;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 4;
+    gap: 2rem;
     margin-top: 6rem;
   }
 
@@ -802,6 +803,14 @@ font-weight: 400;
   .shoppingCart h1 {
     font-size: 18px;
   }
+
+     .size{
+      display: none;
+     }
+
+  .cant{
+      display: none;
+     }
 
   .table th, .table td {
     
@@ -928,6 +937,14 @@ font-weight: 400;
     width: 35px;
 
   }}
+
+  @media screen and (max-width: 414px){
+  
+    .table tbody {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   
 /* Footer */
 .footer {
