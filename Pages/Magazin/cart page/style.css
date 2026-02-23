@@ -43,7 +43,9 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #ebeae13d;
+  /* background: #ebeae13d !important;
+
+  background-image: none !important; */
 
   
 }
@@ -551,6 +553,18 @@ margin-left: 10px;
     width: 25%;
     border: 1px solid #ddd;
   }
+
+  select:focus{
+    border: none;
+    outline: none;
+  }
+
+  input:focus{
+    border: none;
+    outline: none
+  }
+
+
   .table {
     width: 100%;
     border-collapse: collapse;
@@ -614,6 +628,9 @@ margin-left: 10px;
     align-items: center;
     width: 90%;
   }
+  
+ 
+
   .giftCards input, .discountCode input {
     flex: 1;
     padding: 10px;
@@ -645,12 +662,17 @@ margin-left: 10px;
   }
   .orderSummary select ,  .shippingOptions input{
     background: unset;
-color: #999;
+    color: #999;
     padding: 10px;
     border: 1px solid #c9c9c9;
     border-radius: 1px;
-    width: 100%;
+    width: 100%; 
   }
+   .orderSummary option{
+     font-size: 1.2rem;
+     color:#000000;
+     font-weight: 500;
+   }
   .orderSummary .flatRate, .orderSummary .bestWay {
     padding-bottom: 20px;
   }
@@ -947,12 +969,16 @@ font-weight: 400;
   }
   
 /* Footer */
+
 .footer {
   height: auto;
   width: 100%;
   padding: 2rem;
   margin: 0 auto;
-  background: #091430;
+  background: #091430  !important;
+  background-image: none !important;
+  background-size: auto !important;
+  background-repeat: no-repeat !important;
   position: relative;
 }
 
@@ -973,6 +999,7 @@ font-weight: 400;
   font-family: 'Audiowide', sans-serif;
   font-weight: 400;
   min-width: 150px;
+  padding: 2rem 1rem;
 }
 
 .footer-column {
@@ -1102,16 +1129,17 @@ font-weight: 400;
 /* MEDIA QUERIES */
 
 /* Tablet - 768px și mai mic */
-@media (max-width: 768px) {
+@media (max-width: 814px) {
   .footer {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+
   }
 
   .footer-content {
     width: 95%;
-    padding: 0.5rem;
+    padding: 1rem;
     gap: 1.5rem;
-    justify-content: flex-start;
+    
   }
 
   .footer-column {
@@ -1138,13 +1166,20 @@ font-weight: 400;
     gap: 1rem;
   }
 
+
+
   .footer-bottom-content {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .copyright {
     min-width: 100%;
+  
   }
 
   .legal-links {
@@ -1158,9 +1193,9 @@ font-weight: 400;
 }
 
 /* Mobile - 480px și mai mic */
-@media (max-width: 480px) {
+@media (max-width: 625px) {
   .footer {
-    padding: 1rem;
+    padding: 2rem;
     overflow-x: hidden;
   }
 
@@ -1169,7 +1204,7 @@ font-weight: 400;
     max-width: 100%;
     padding: 0;
     gap: 1rem;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -1181,19 +1216,20 @@ font-weight: 400;
     width: 100%;
     margin: 0;
   }
-
+/* 
   .footer-column {
     width: 100%;
-    min-width: unset;
+
     align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
-  .footer-list {
+   .footer-list {
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
+  }  */
 
   .footer-title {
     font-size: 0.8rem;
@@ -1239,5 +1275,58 @@ font-weight: 400;
 
   .legal-link {
     font-size: 0.7rem;
+  }
+
+  .socials-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    padding:1rem;
+  }
+
+  .circle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 30px;
+    height: 40px;
+    width: 40px;
+    /* float: left; */
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+}
+
+
+@media (max-width: 550px){
+ .footer-content{
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+ }
+
+
+   .footer-column {
+    width: 100%;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-a {
+    font-size: 0.rem;
   }
 }

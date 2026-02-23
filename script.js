@@ -1,10 +1,12 @@
 
 const topText = document.querySelector('.span-h1-hero-1');
 const bottomText = document.querySelector('.span-h1-hero-2');
+const imageTshirt = document.querySelector('.image-t-shirt')
+const imageLaptop = document.querySelector('.image-laptop')
 const cards = document.querySelectorAll('.card')
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+
 
    
 document.addEventListener("DOMContentLoaded", function() {
@@ -21,18 +23,19 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-   
-
-        
 
 
 window.addEventListener('scroll', () => {
   const scroll = window.scrollY;
    
-   topText.style.transform = `translateX(${scroll * 2}px)`;    // merge spre dreapta
-   bottomText.style.transform = `translateX(${-scroll * 2}px)`; // merge spre stânga
-   
+   topText.style.transform = `translateX(${scroll * 2}px)`;    
+   bottomText.style.transform = `translateX(${-scroll * 2}px)`; 
+   imageLaptop.style.transform = `translateX(${scroll * 1.5  }px)`
+    imageTshirt.style.transform = `translateX(${-scroll * 1.5  }px)`
 });
+
+   
+
 
 
   let scrollProgress = 0
@@ -64,19 +67,6 @@ window.addEventListener('scroll' , () =>{
       
 
 
-window.addEventListener('scroll' , () =>{
-  const scrollHeight = document.documentElement.scrollHeight - window.scrollHeight;
-  scrollProgress = (window.scrollY - window.innerHeight)*10;
-
-  cards.forEach((card,index) =>{
-    const config = directions[index];
-    const rotation = (scrollProgress / 100) * config.maxRotation * config.direction * config.speed; 
-    card.style.transform = `rotateZ(${rotation}deg) rotateX(${rotation * 0.3}deg) rotateY(${rotation * 0.2}deg)`;
-  })
-
-
-
-})
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -99,8 +89,8 @@ gsap.to(text, {
   ease: "none",
   scrollTrigger: {
     trigger: "#services",
-    start: "top center",  // 👈 Schimbat în "top center" - pornește când #services ajunge la centrul ecranului
-    end: "bottom center", // 👈 Se termină când #services iese din ecran
+    start: "top center",  
+    end: "bottom center", 
     scrub: 1,
     pin: false,
     invalidateOnRefresh: true,
@@ -163,3 +153,5 @@ document.querySelectorAll('.blog-box').forEach(card => {
         window.location.href = `Pages/blog/blogPage/blog.html?id=${productId}`;
     });
 });
+
+yearEl.textContent = currentYear;

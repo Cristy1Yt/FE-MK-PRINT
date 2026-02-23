@@ -29,10 +29,10 @@ const products = [
     id: "B001",
     showcaseImage:'../assets-magazin/img/img1.png',
     category: "Tricou personalizat",
-    name: "TRICOUBUMBAC UNISEX",
+    name: "TRICOU BUMBAC UNISEX",
     description: "Confortabil, imprimat durabil",
-    price: 45,
-    currency: "RON"
+    price: 79.99,
+    currency: "Lei"
   },
   {
     id: "B002",
@@ -40,8 +40,8 @@ const products = [
     category: "Tricou personalizat",
     name: "TRICOU POLIESTER",
     description: "100% bumbac | mărimi S–XXL",
-    price: 35,
-    currency: "RON"
+    price: 65.99,
+    currency: "Lei"
   },
   {
     id: "B003",
@@ -49,8 +49,8 @@ const products = [
     category: "Hanorace",
     name: "HANORAC FĂRĂ GLUGĂ",
     description: "Simplu, elegant și confortabil",
-    price: 105,
-    currency: "RON"
+    price: 129.99,
+    currency: "Lei"
   },
   {
     id: "B004",
@@ -58,8 +58,8 @@ const products = [
     category: "Hanorace",
     name: "HANORAC CU GLUGĂ",
     description: "Moale, călduros și modern",
-    price: 115,
-    currency: "RON"
+    price: 149.99,
+    currency: "Lei"
   },
 
   {
@@ -68,16 +68,16 @@ const products = [
     category: "Accesorii",
     name: "ȘAPCĂ PERSONALIZATĂ",
     description: "Practică și rezistentă",
-    price: 35,
-    currency: "RON"
+    price: 39.99,
+    currency: "Lei"
   },{
   id: "B006",
     showcaseImage:'../assets-magazin/img/img5.png',
     category: "Accesorii",
     name: "TOTE BAG",
     description: "Eco, reutilizabilă, 38x42 cm",
-    price: 30,
-    currency: "RON"
+    price: 9.69,
+    currency: "Lei"
   },
   {
     id: "C001",
@@ -85,8 +85,8 @@ const products = [
     category: "Materiale promoționale",
     name: "STICKER",
     description: "Autocolant colorat, forme diverse",
-    price: 4,
-    currency: "RON"
+    price: 2.50,
+    currency: "Lei"
   },
   {
     id: "C002",
@@ -94,8 +94,8 @@ const products = [
     category: "Materiale promoționale",
     name: "STICKERE TĂIATE LA FORMĂ",
     description: "Vinil premium, decupare precisă",
-    price: 6,
-    currency: "RON"
+    price: 3,
+    currency: "Lei"
   },
   {
     id: "C003",
@@ -103,7 +103,7 @@ const products = [
     category: "Materiale promoționale",
     name: "FLYERE / PLIANTE",
     description: "Hârtie lucioasă, A6–A4",
-    price: 1.5,
+    price: 4.99,
     currency: "RON"
   },
   {
@@ -112,8 +112,8 @@ const products = [
     category: "Materiale promoționale",
     name: "CĂRȚI DE VIZITĂ",
     description: "Carton 300g, 8.5x5.5 cm",
-    price: 0.7,
-    currency: "RON"
+    price: 0.89,
+    currency: "Lei"
   },
   {
     id: "C005",
@@ -121,8 +121,8 @@ const products = [
     category: "Materiale promoționale",
     name: "CARTE PERSONALIZATĂ",
     description: "Copertă cartonată / hârtie lucioasă",
-    price: 50,
-    currency: "RON"
+    price: 61.99,
+    currency: "Lei"
   },
   {
     id: "C006",
@@ -130,8 +130,8 @@ const products = [
     category: "Materiale promoționale",
     name: "ROLL-UP PUBLICITAR",
     description: "Structură aluminiu + print PVC, 85x200 cm",
-    price: 750,
-    currency: "RON"
+    price: 589.99,
+    currency: "Lei"
   },
   {
     id: "C007",
@@ -139,8 +139,8 @@ const products = [
     category: "Printuri decorative",
     name: "TABLOU RAMĂ DIN LEMN",
     description: "Tablou Lemn, 20x30 – 60x90 cm",
-    price: 75,
-    currency: "RON"
+    price: 33.88,
+    currency: "Lei"
   },
   {
     id: "C008",
@@ -148,8 +148,8 @@ const products = [
     category: "Printuri decorative",
     name: "TABLOU CANVAS",
     description: "Canvas , 20x30 – 60x90 cm",
-    price: 60,
-    currency: "RON"
+    price: 61.71,
+    currency: "Lei"
   },
   {
     id: "C009",
@@ -157,62 +157,62 @@ const products = [
     category: "Printuri decorative",
     name: "TABLOU ROLL",
     description: "Material textil|diverse dimensiuni|",
-    price: 70,
-    currency: "RON"
+    price: 69.99,
+    currency: "Lei"
   },
   {
-    id: "C0010",
+    id: "C010",
     showcaseImage:'../assets-magazin/img/img16.png',
     category: "Produse personalizate",
     name: "CANĂ PERSONALIZATĂ",
     description: "Ceramică 330 ml, ideală pentru cadouri",
-    price: 30,
-    currency: "RON"
+    price: 11.99,
+    currency: "Lei"
   },
   {
-    id: "C0011",
+    id: "C011",
     showcaseImage:'../assets-magazin/img/img17.png',
     category: "Produse personalizate",
     name: "BRELOC PERSONALIZAT",
     description: "Metal sau plastic, diverse forme",
-    price: 10,
-    currency: "RON"
+    price: 11.99,
+    currency: "Lei"
   },
   {
-    id: "C0012",
+    id: "C012",
     showcaseImage:'../assets-magazin/img/img18.png',
     category: "Produse personalizate",
     name: "PUZZLE PERSONALIZAT",
     description: "120–500 piese, cadou creativ",
-    price: 40,
-    currency: "RON"
+    price: 89.99,
+    currency: "Lei"
   },
   {
-    id: "C0013",
+    id: "C013",
     showcaseImage:'../assets-magazin/img/img19.png',
     category: "Produse personalizate",
     name: "MAGNET FRIGIDER",
     description: "Colorat și rezistent, PVC/lemn",
-    price: 8,
-    currency: "RON"
+    price: 11.99,
+    currency: "Lei"
   },
   {
-    id: "C0014",
+    id: "C014",
     showcaseImage:'../assets-magazin/img/img20.png',
     category: "Produse personalizate",
     name: "PERNĂ PERSONALIZATĂ",
     description: "40x40 cm, poliester/bumbac",
-    price: 50,
-    currency: "RON"
+    price: 66.50,
+    currency: "Lei"
   },
   {
-    id: "C0015",
+    id: "C015",
     showcaseImage:'../assets-magazin/img/img21.png',
     category: "Produse personalizate",
     name: "TERMOS PERSONALIZAT",
     description: "Oțel/aluminiu, 500–750 ml",
-    price: 60,
-    currency: "RON"
+    price: 49.99,
+    currency: "Lei"
   }
 ];
 
@@ -283,14 +283,14 @@ function updateCartTable() {
   }
 
   cart.forEach((item, index) => {
-    const itemTotal = item.price * item.quantity;
+    const itemTotal =  item.price * item.quantity ;
     subtotal += itemTotal;
 
     const row = document.createElement('tr');
     row.innerHTML = `
       <td class="imageTitle">
         <img src="${item.image}" alt="${item.name}" style="width: 60px; height: auto;">
-        <p ">${item.name}</p>
+        <p ">${item.id}-${item.name}</p>
       </td>
       <td class="price">${item.size}</td>
       <td class="qty">
@@ -312,7 +312,7 @@ function updateCartTable() {
 
 function updateTotals(subtotal) {
   const shippingCost = 16;
-  const total = subtotal + shippingCost;
+  const total = Math.round((subtotal + shippingCost) * 100) / 100;
 
   const totalPriceDiv = document.querySelector('.totalPrice');
   if (!totalPriceDiv) return;
@@ -329,8 +329,8 @@ function showNotification(message) {
   notification.textContent = message;
   notification.style.cssText = `
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10rem;
+    right: 5rem;
     background: #4CAF50;
     color: white;
     padding: 15px 20px;
@@ -357,10 +357,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('product-detail-p').textContent = product.description;
     document.getElementById('price').textContent = product.price;
     document.getElementById('image-showcase').src = product.showcaseImage;
-
+    document.getElementById('cod').textContent = `Codul producătorului: ${product.id}`;
+    document.getElementById('categorie').textContent = `Categorie : ${product.category}`;
+    document.getElementById('descriere').textContent = `Descriere : ${product.description}`;
     const sizeSelect = document.getElementById('size-select');
     const addToCartBtn = document.getElementById('add-to-cart');
 
+
+
+    
     // Dezactiveaza butonul initial
     addToCartBtn.disabled = true;
     addToCartBtn.style.opacity = '0.5';
