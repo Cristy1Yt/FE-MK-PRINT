@@ -1155,7 +1155,7 @@ product-tumb{
   width:55%
 }
 .image-t-shirt{
-   top:-10rem;
+  top:-10rem;
   width:45%
 }
 
@@ -1259,3 +1259,11 @@ product-tumb{
    top:-8rem;
   width:45%
 }}
+
+@media screen and (max-width:404px){
+      .span-h1-hero {
+        
+        font-size: 1.5rem;
+      
+    }
+}
