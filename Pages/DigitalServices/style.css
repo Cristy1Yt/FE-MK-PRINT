@@ -2269,9 +2269,12 @@ font-size: 1.2rem;
 
 @media screen and (max-width:750px){
 
-    .services-content{
-  
-  
+  #hero{
+     background-position: center;
+     background-size: cover;
+  }
+
+.services-content{ 
    margin-left: 12rem;
 }
     .lottie {
