@@ -410,7 +410,8 @@ a{
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width:700px){
+
+  @media screen and (max-width:700px){
   .nav-container{
     display: flex;
     justify-content: flex-start;
@@ -459,11 +460,19 @@ a{
   }
 }
 
+@media screen and (max-width:450px){
+  .navigation-box {
+    right: -11rem;
+  }
+}
+
+
 @media screen and (max-width:414px){
   .navigation-box {
     right: -10rem;
   }
 }
+
 
 /*  Services Digital*/
 

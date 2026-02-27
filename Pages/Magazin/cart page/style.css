@@ -429,7 +429,8 @@ a{
 }
 
 
-@media screen and (max-width:700px){
+
+  @media screen and (max-width:700px){
   .nav-container{
     display: flex;
     justify-content: flex-start;
@@ -461,11 +462,9 @@ a{
   .nav-text{
     display: none;
   }
-
   .socials{
     display: none;
   }
- 
 }
 
 @media screen and (max-width:644px){
@@ -480,11 +479,19 @@ a{
   }
 }
 
+@media screen and (max-width:450px){
+  .navigation-box {
+    right: -11rem;
+  }
+}
+
+
 @media screen and (max-width:414px){
   .navigation-box {
     right: -10rem;
   }
 }
+
 /* Cart */
 .cart-area{
     min-height: 100vh;
