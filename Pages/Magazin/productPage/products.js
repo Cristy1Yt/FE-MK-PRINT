@@ -1,3 +1,5 @@
+"use strict";
+
 
 const topText = document.querySelector('.span-h1-hero-1');
 const bottomText = document.querySelector('.span-h1-hero-2');
@@ -104,7 +106,7 @@ const products = [
     name: "FLYERE / PLIANTE",
     description: "Hârtie lucioasă, A6–A4",
     price: 4.99,
-    currency: "RON"
+    currency: "Lei"
   },
   {
     id: "C004",
@@ -226,7 +228,8 @@ function saveCart(cart) {
 }
 
 function addToCart(product, size) {
-  let cart = getCart();
+  
+ let cart = getCart();
   
   // Cauta produsul cu aceeasi marime
   const existingItem = cart.find(item => item.id === product.id && item.size === size);
@@ -242,10 +245,17 @@ function addToCart(product, size) {
       quantity: 1,
       image: product.showcaseImage
     });
+
+    
   }
 
   saveCart(cart);
   showNotification('Produs adăugat în coș!');
+  
+  // Refresh cart display daca suntem pe pagina cart
+  if (document.querySelector('.shoppingCart')) {
+    updateCartTable();
+  }
 }
 
 function removeFromCart(index) {
@@ -269,41 +279,56 @@ function updateQuantity(index, newQuantity) {
 }
 
 function updateCartTable() {
-  const cartTable = document.querySelector('.shoppingCart tbody');
+  const cartTable = document.querySelector('.table-body');
   if (!cartTable) return; // Nu suntem pe pagina cart
 
   let cart = getCart();
-  cartTable.innerHTML = ''; // Goleste complet tabelul (inclusiv linia default)
+  cartTable.innerHTML = ''; // Goleste complet tabelul
   let subtotal = 0;
 
   if (cart.length === 0) {
-    cartTable.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px;">Coșul este gol</td></tr>';
+    cartTable.innerHTML = '';
     updateTotals(0);
     return;
   }
 
   cart.forEach((item, index) => {
-    const itemTotal =  item.price * item.quantity ;
+    const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
 
-    const row = document.createElement('tr');
+    
+    const row = document.createElement('div');
+    row.className = 'cart-row';
     row.innerHTML = `
-      <td class="imageTitle">
-        <img src="${item.image}" alt="${item.name}" style="width: 60px; height: auto;">
-        <p ">${item.id}-${item.name}</p>
-      </td>
-      <td class="price">${item.size}</td>
-      <td class="qty">
-        <input type="number" value="${item.quantity}" min="1" 
-          onchange="updateQuantity(${index}, this.value)" style="width: 50px;">
-      </td>
-      <td class="subtotal">${itemTotal} Lei</td>
-      <td>
-        <button onclick="removeFromCart(${index})" style="background: #ff4444; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px;">
-          Șterge
+    
+      <div class="imageTitle">
+        <div>
+        <button onclick="removeFromCart(${index})" style="padding: 5px 10px; cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z" class="x"></path></svg>
         </button>
-      </td>
+      </div>
+        <img src="${item.image}" alt="${item.name}" style="width: 8rem; height: auto;">
+        <div class="div-text">
+          <p>${item.id}-${item.name}</p>
+          <p class="price">Mărime: ${item.size}</p>
+        </div>  
+      </div>
+      
+      <div class="qty">
+      <div class=qty-box>
+        <button onclick="updateQuantity(${index}, ${item.quantity - 1})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M176,128a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,128Zm56,0A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
+        </button>
+        <span>${item.quantity}</span>
+        <button onclick="updateQuantity(${index}, ${item.quantity + 1})">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path></svg>
+        </button>
+        </div>
+        <span class="subtotal">${itemTotal.toFixed(2)} Lei</span>
+      </div>
+      
     `;
+    
     cartTable.appendChild(row);
   });
 
@@ -311,17 +336,19 @@ function updateCartTable() {
 }
 
 function updateTotals(subtotal) {
-  const shippingCost = 16;
+  let shippingCost = subtotal >= 150 ? 0 : 16;
   const total = Math.round((subtotal + shippingCost) * 100) / 100;
 
-  const totalPriceDiv = document.querySelector('.totalPrice');
+  const totalPriceDiv = document.querySelector('.price-box');
   if (!totalPriceDiv) return;
+  const shippingSpan = document.querySelector('.price-shipping')
+  shippingSpan.textContent = shippingCost.toFixed(2);
+  const subtotalSpan =document.querySelector('.price-subtotal')
+  subtotalSpan.textContent= subtotal.toFixed(2);
+  const totalSpan =document.querySelector('.price-total')
+  totalSpan.textContent = total.toFixed(2);
+ 
 
-  totalPriceDiv.innerHTML = `
-    <p>Subtotal <span>${subtotal} Lei</span></p>
-    <p>Shipping <span>${shippingCost} Lei</span></p>
-    <p class="total">Total <span>${total} Lei</span></p>
-  `;
 }
 
 function showNotification(message) {
@@ -343,13 +370,16 @@ function showNotification(message) {
   setTimeout(() => notification.remove(), 2000);
 }
 
+
+
+
 // ==================== PAGINA PRODUS ====================
 
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
   const product = products.find(p => p.id === id);
-
+  console.log(product);
   // Daca suntem pe pagina PRODUS
   if (product && document.getElementById('product-title')) {
     document.getElementById('product-title').textContent = product.category;

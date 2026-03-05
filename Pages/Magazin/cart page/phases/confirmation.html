@@ -1,0 +1,76 @@
+<head>
+  <link rel="stylesheet" href="../style.css">
+  
+</head>
+
+<section class="main-container">
+  <div class="content-container confirmation-container">
+    
+    <!-- STÂNGA: Produse din cart -->
+    <div class="confirmation-products">
+      <h2>Rezumat Coș</h2>
+      <div id="confirmationProductsList"></div>
+      
+      <div class="confirmation-totals">
+        <p class="subtotal-confirm"><span>Subtotal:</span> <span class="subtotal-value">0.00</span> Lei</p>
+        <p class="shipping-confirm"><span>Transport:</span> <span class="shipping-value">16.00</span> Lei</p>
+        <p class="total-confirm"><span>Total:</span> <span class="total-value">0.00</span> Lei</p>
+      </div>
+    </div>
+
+    <!-- DREAPTA: Detalii comandă -->
+    <div class="confirmation-details">
+      
+      <!-- Adresă de livrare -->
+      <div class="confirmation-section">
+        <h3>Adresa de Livrare</h3>
+        <div id="deliveryAddressBox" class="address-box">
+          <p class="address-placeholder">Nicio adresă selectată</p>
+        </div>
+      </div>
+
+      <!-- Adresă de facturare -->
+      <div class="confirmation-section">
+        <h3>Adresa de Facturare</h3>
+        <div id="billingAddressBox" class="address-box">
+          <p class="address-placeholder">Aceeași cu livrarea</p>
+        </div>
+      </div>
+
+      <!-- Metoda de plată -->
+      <div class="confirmation-section">
+        <h3>Metoda de Plată</h3>
+        <div id="paymentMethodBox" class="payment-box">
+          <p class="payment-placeholder">Nicio metodă selectată</p>
+        </div>
+      </div>
+
+      <!-- Email de confirmare -->
+      <div class="confirmation-section">
+        <h3>Email de Confirmare</h3>
+        <div class="email-input-section">
+          <input type="email" id="orderEmail" class="form-input" placeholder="Ex: email@example.com" autocomplete="off">
+          <p class="error-msg">Te rugăm să introduci o adresă de email validă.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Buton de confirmare finală - DOAR ASTA -->
+  <div class="confirmation-button-container">
+    <button class="btn-place-order" id="placeOrderBtn">Confirmare și Plasare Comandă</button>
+  </div>
+</section>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "yVWfsb2JrXReKGfoF",
+      });
+   })();
+</script>
+<script src="../script.js"></script>

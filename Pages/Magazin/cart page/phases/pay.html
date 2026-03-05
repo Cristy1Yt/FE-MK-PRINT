@@ -1,0 +1,63 @@
+<head>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<section class="main-container">
+  <div class="content-container">
+    
+    <div class="payment-methods">
+      
+      <!-- Metoda 1: Card -->
+      <div class="payment-option" id="payCard">
+        <div class="radio-dot"></div>
+        <span class="payment-label">Plătește cu cardul</span>
+      </div>
+
+      <form class="payment-form" id="cardForm">
+        <div class="form-group">
+          <label for="name">Titular Card</label>
+          <input type="text" name="name" id="name" class="form-input" placeholder="Ex: Andrei Ion" maxlength="28" autocomplete="off">
+          <p class="error-msg">Te rugăm să introduci numele de pe card.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">Nr. card</label>
+          <input type="text" name="card-number" id="card-number" class="form-input card-number" placeholder="Ex.: 1234 5678 9123 0000" maxlength="19" autocomplete="off">
+          <p class="error-msg">Te rugăm să introduci numărul cardului valid.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="month">Dată Expirare</label>
+            <div class="date-inputs">
+              <input type="text" name="month" id="month" class="form-input" placeholder="MM" maxlength="2">
+              <span class="separator">/</span>
+              <input type="text" name="year" id="year" class="form-input" placeholder="AA" maxlength="2">
+            </div>
+            <p class="error-msg">Format: MM/AA</p>
+          </div>
+
+          <div class="form-group">
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" class="form-input" placeholder="123" maxlength="3">
+            <p class="error-msg">Cod de 3 cifre</p>
+          </div>
+        </div>
+      </form>
+
+      <!-- Metoda 2: Ramburs -->
+      <div class="payment-option" id="payRamburs">
+        <div class="radio-dot"></div>
+        <span class="payment-label">Plată la ramburs</span>
+      </div>
+
+     
+
+    </div>
+
+    <button class="btn-confirm" id="confirmPayment">Confirmare Plată</button>
+
+  </div>
+</section>
+
+<script src="../script.js"></script>

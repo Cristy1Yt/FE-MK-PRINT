@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" href="../assets-magazin/img/logo.jpeg">
     <link rel="stylesheet" href="./style.css">
     <title>MK PRINT</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 </head>
 <body>
 
@@ -54,212 +57,56 @@
      
     </header>
     <main>
-      <section class="cart-area">
+      <section class="cart-area" >
           <div class="container">
       <div class="shoppingCart">
-        <h1>Coș de Cumpărături</h1>
-        <table class="table">
-          <thead class="thead">
-            <tr class="tr">
-              <th>Produs</th>
-              <th class="size">Mărime</th>
-              <th class="cant">Cantitate</th>
-              <th class="subtotal">Subtotal</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
+        <h1>COȘUL TĂU</h1>
+        <div class="table">
+          <div class="table-body">
 
-     
-
-        <div class="giftCardsWrapper">
-          <h3>Card Cadou</h3>
-          <div class="giftCards">
-            <input type="text" placeholder="Adaugă Card Cadou ">
-            <button>Adaugă</button>
+              
           </div>
-        </div>
-
-        <div class="discountCodeWrapper">
-          <h3> Cod de Reducere</h3>
-          <div class="discountCode">
-            <input type="text" placeholder="Adaugă Cod De Reducere">
-            <button>Adaugă</button>
-          </div>
-        </div>
+        </div>     
       </div>
-
-      <div class="orderSummary">
-        <h2>Detalii Livrare</h2>
-        <div class="shippingOptions">
-          
-          <label>Țară</label>
-          <select>
-            <option>România</option>
-          </select>
-          <label  for="judet" >Județ</label>
-          <select id="judet" required class="border">
-          <option value="" disabled selected  >
-              Selectează Județul
-           </option>
-
-             <option value="Alba">
-              Alba
-             </option>
-             <option value="Arad">
-              Arad
-             </option>
-             <option value="Argeș">
-              Argeș
-             </option>
-             <option value="Bacău">
-              Bacău
-             </option>
-             <option value="Bihor">
-              Bihor
-             </option>
-             <option value="București">
-              București
-             </option>
-             <option value="Buzău">
-              Buzău
-             </option>
-             <option value="Brașov">
-             Brașov
-             </option>
-             <option value="Brăila">
-            Brăila
-             </option>
-             <option value="București">
-             București
-             </option>
-             <option value="Călărași">
-              Călărași
-             </option>
-             <option value="Cluj">
-             Cluj
-             </option>
-            
-            
-             <option value="Constanța">
-            Constanța
-             </option>
-             <option value="Covasna">
-              Covasna
-             </option>
-             <option value="Dâmbovița">
-              Dâmbovița
-             </option>
-             <option value="Dolj">
-              Dolj
-             </option>
-             <option value="Galați">
-             Galați
-             </option>
-             <option value="Giurgiu">
-             Giurgiu
-             </option>
-             <option value="Gorj">
-              Gorj
-             </option>
-             <option value="Harghita">
-             Harghita
-             </option>
-             <option value="Hunedoara">
-              Hunedoara
-             </option>
-             <option value="Ialomița">
-             Ialomița
-             </option>
-             <option value="Iași">
-              Iași
-             </option>
-             <option value="Iași">
-              Ilfov
-             </option>
-             <option value="Maramureș">
-              Maramureș
-             </option>
-             <option value="Mehedinți">
-              Mehedinți
-             </option>
-             <option value="Mureș">
-              Mureș
-             </option>
-             <option value="Neamț">
-              Neamț
-             </option>
-             <option value="Olt">
-              Olt
-             </option>
-             <option value="Prahova">
-              Prahova
-             </option>
-             <option value="Satu Mare">
-              Satu Mare
-             </option>
-             <option value="Sălaj">
-              Sălaj
-             </option>
-             <option value="Sibiu">
-              Sibiu
-             </option>
-             <option value="Suceava">
-              Suceava
-             </option>
-             <option value="Teleorman">
-              Teleorman
-             </option>
-             <option value="Timiș">
-              Timiș
-             </option>
-             <option value="Tulcea">
-              Tulcea
-             </option>
-             <option value="Vaslui">
-              Vaslui
-             </option>
-             <option value="Vâlcea">
-              Vâlcea
-             </option>
-             <option value="Vrancea">
-             Vrancea
-             </option>
-             
-        </select>
-          <label>Detalii Suplimentare</label>
-            <input type="text" placeholder="Comuna , Strada , Nr.">
-          <label>Cod Poștal</label>
-          <input type="text" placeholder="Cod Poștal">
-          <label>Nume</label>
-          <input type="text" placeholder="Nume">
-          <label>Prenume</label>
-          <input type="text" placeholder="Prenume">
-          <label>Email</label>
-          <input type="text" placeholder="Email">
-            <label>Metoda de Plată</label>
-          <select>
-            <option>Alege o Opțiune</option>
-            <option>Numerar</option>
-            <option>Plata cu Cardul</option>
-          </select>
-        </div>
-        
+       <div class="border"></div>
+    <div class="checkout-box">
+       <h1>TOTAL COȘ</h1>
        
-        <div class="totalPrice">
-          <p>Subtotal <span>45 Lei</span></p>
-          <p>Transport <span>16 Lei</span></p>
-          <p class="total"> Total <span>61 Lei</span></p>
-        </div>
-        <div class="proceed_section">
-          <button class="button">Finalizează Comanda</button>
-          <span>Verifică Adresa De Livrare</span>
-        </div>
+      <div class="price-box">
+         
+          <p class="shipping"><span>Transport : </span> <span class="price-shipping"></span>Lei</p>
+          <p class="subtotal"><span>Subtotal : </span> <span class="price-subtotal"></span>Lei</p>
+          <p class="total-p"><span>Total : </span> <span class="price-total"></span>Lei</p>
+         
+         
+      </div>
+      <div class="checkout-button">
+        <a href="#" class="btn-check">Mergi la Checkout</a>
+        <a href="../index.html" class="continue">← CONTINUĂ CUMPĂRĂTURILE</a>
       </div>
     </div>
+      
+    
+    </div>
+    
       </section>
+
+      <section class="phases-box">
+         <div class="phase-row">
+            
+         </div>
+
+         <div class="phase-content">
+            <div class="adress-box"></div>
+            <div class="pay-box"></div>
+            <div class="confirmation-box"></div>
+            <div class="finish"></div>
+         </div>
+
+         <button class="btn-phase" id="btnSave"><a href="#" class="next-phase " >Următorul Pas</a></button>
+      </section>
+
+      
     </main>
      <footer class="footer">
 
