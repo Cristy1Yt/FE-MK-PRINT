@@ -471,9 +471,9 @@ a{
   .nav-text{
     display: none;
   }
-  .socials{
+  /* .socials{
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width:644px){
