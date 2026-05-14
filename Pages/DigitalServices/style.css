@@ -2970,7 +2970,7 @@ font-size: 1.2rem;
     
   }
  .desc-ul{
-      margin-left: -2.8rem;
+      margin-left: -2rem;
     }
 
         .services-list {
@@ -2987,6 +2987,10 @@ font-size: 1.2rem;
         gap: 1rem;
         margin-left: -6rem;
         min-width: 10rem;
+    }
+
+        .service-li {
+        font-size: 1.1rem;
     }
 
 }
