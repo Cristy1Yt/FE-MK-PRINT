@@ -2576,6 +2576,10 @@ font-size: 1.2rem;
         width: 250px;
     }
 
+        #services {
+        margin-top: -5rem;
+    }
+
     .text{
   padding-right:10rem;
 }
