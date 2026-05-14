@@ -599,10 +599,10 @@ a{
   right: 4rem;
 }
 
-@media screen and (max-width: 1530px){
+@media screen and (max-width: 1540px){
 .second-text-section{
 
-  bottom:3rem;
+  bottom: 3rem;
  
 }
 }
