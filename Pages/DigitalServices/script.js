@@ -21,17 +21,17 @@ yearEl.textContent = currentYear;
 
    const servicesData = {
     web:{
-        subServicii:['Landing & prezentare' ,  'Optimizare viteză & UX' , 'E-commerce' , ' Mentenanță'],
+        subServicii:['Landing & prezentare' ,  'E-commerce' , 'Optimizare viteză & UX' , ' Mentenanță'],
         textP:'Dezvoltăm platforme digitale , construite pe arhitecturi moderne, optimizate , securizate și scalabile pe termen lung.',
         textB: 'Website-urile noastre sunt concepute cu atenție la detalii și orientare strategică,  un instrument activ de creștere pentru compania ta.',   
     },
      ux:{
-        subServicii:['Wireframes' ,  'Identități vizuale' , 'Optimizare UI' , 'Design'],
+        subServicii:['Wireframes' ,  'Design' , 'Optimizare UI' , 'Identități vizuale'],
         textP:'Proiectăm experiențe digitale intuitive care simplifică interacțiunea utilizatorului și cresc rata de conversie prin structură clară și design strategic.',
         textB: 'Designul nostru nu este doar estetic, ci funcțional și orientat spre rezultate, ajutând brandul tău să creeze încredere, să îmbunătățească experiența utilizatorilor și să transforme vizitele în oportunități reale.',   
     },
      ads:{
-        subServicii:['Bannere animate' ,  'Vizualuri' , ' Vizuale social media' , 'Creatives social media'],
+        subServicii:['Creatives social media' ,  'Vizualuri' , ' Vizuale social media' , 'Bannere animate'],
         textP:'Implementăm campanii de publicitate digitală bazate pe analiză de date și targetare avansată, optimizate pentru performanță și rentabilitate.',
         textB: 'Publicitatea noastră digitală este construită strategic pentru a genera vizibilitate relevantă și pentru a aduce clienți noi în compania ta, contribuind activ la creșterea veniturilor.',   
     },  
@@ -53,8 +53,10 @@ serviceLi.forEach(item => {
      item.addEventListener('click' , () => {
         const id = item.getAttribute('data-id');
         const data = servicesData[id];
+       
 
         if(data){
+           descriptionContainer.classList.remove('animate-fade');
             descUl.innerHTML = data.subServicii.map(feature => `<li class="desc-li">${feature}</li>`).join('');
 
 
@@ -63,8 +65,8 @@ serviceLi.forEach(item => {
             descP.textContent = data.textP;
             descB.textContent = data.textB
 
-
-            // descriptionContainer.classList.add('animate-fade');
+          descriptionContainer.classList.add('animate-fade');
+             
         }
 
 

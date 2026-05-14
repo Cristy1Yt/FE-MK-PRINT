@@ -681,7 +681,7 @@ a{
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   gap:7rem;
+   gap:1rem;
    padding:2rem 8rem;
    margin-top: 5rem;
 }
@@ -718,18 +718,60 @@ a{
    align-items: center;
    justify-content: center;
    gap:1rem;
+   min-width:60rem;
+}
+
+@media screen and (max-width: 1400px){
+  .services-content{
    min-width:70rem;
+   gap:4rem;
+   
+}
+
+.services-list{
+  width: 80%;
+ 
+}
+
+}
+
+@media screen and (max-width: 1000px){
+  .services-content{
+   min-width:70rem;
+   gap:8rem;
+   
+}
+.service-desc{
+  font-size: 1rem;
+  
+}
+
+.services-list{
+  width: 100%;
+ padding: 2rem;
+}
+.service-ul{
+
+  gap:1rem
+}
+.service-li{
+  
+  font-size: 2.5rem;
+  
+}
 }
 
 
 
+
 .services-list{
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap:4rem;
+  border-right: 2px solid #FF6700;
 }
 
 .services-list h1 {
@@ -758,15 +800,15 @@ a{
 }
 
 .description-service{
- 
+  
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content:center;
   flex-direction: column;
   gap:2rem;
   height: 100%;  /* margin-top: 1rem; */
   min-height: 40rem;
-  min-width: 40rem;
+  min-width: 20rem;
 }
 
 .animate-fade{
@@ -2249,7 +2291,7 @@ font-size: 1.2rem;
 @media screen and (max-width:800px){
   .services-content{
    gap:2rem;
-   min-width:50rem;
+   /* min-width:50rem; */
   
    margin-left: 8rem;
 }
@@ -2261,7 +2303,7 @@ font-size: 1.2rem;
     }
 
        .services-list{
-       border-right: 1px solid #333;
+       
         padding-right: 2rem; 
        }
 
@@ -2651,13 +2693,24 @@ font-size: 1.2rem;
 
 
 @media screen and (max-width:520px){
-
+    .services-list {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+        gap: 2rem;
+        padding-left:7rem;
+        border-bottom: 2px solid #FF6700;
+        padding-bottom: 1rem;
+    }
       .service-ul {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 0.5rem;
-        margin-left: -3rem;
+        gap: 1rem;
+        
+        margin-left: 2rem;
         min-width: 10rem;
     }
     .services-content {
@@ -2666,10 +2719,18 @@ font-size: 1.2rem;
         margin-left: 6rem;
     }
 
+    .service-li{
+      font-size:1.2rem;
+    }
+
+
         .card-desc {
         font-size: 0.7rem;
         width: 100%;
         color: #333;
+    }
+    #team{
+      display: none;
     }
 }
 
@@ -2749,11 +2810,7 @@ font-size: 1.2rem;
     color: #0C0C0C;
   }
 
-    .services-content {
-       
-      
-        margin-left: 8rem;
-    }
+    
 
      .big{
  
@@ -2766,6 +2823,35 @@ font-size: 1.2rem;
  
  width: 5rem;
 }
+.services-list {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+        gap: 2rem;
+        padding-left:15rem;
+        border-bottom: 2px solid #FF6700;
+        padding-bottom: 1rem;
+    }
+      .service-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        
+        margin-left: -5rem;
+        min-width: 10rem;
+    }
+    .services-content {
+       
+      
+        margin-left: 6rem;
+    }
+
+    .service-li{
+      font-size:1.2rem;
+    }
 }
 
 
@@ -2800,24 +2886,40 @@ font-size: 1.2rem;
     }
 
     .cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
      
     }
 
     .card-process{
       padding-left: 1rem;
+      
     }
+.card-process:not(:last-child) {
+    border-right: none;
+}
 
-
+  .card-heading {
+        font: 500 1.2rem 'Audiowide', sans-serif;
+    }
+ 
+    
+    .desc-li {
+        
+        padding: 1rem 0.5rem;
+        margin: 0 auto;
+        
+    }
   
 
       .desc-ul {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
         /* gap: 8px; */
+        gap:1rem;
     }
 
         .description-service {
@@ -2832,10 +2934,14 @@ font-size: 1.2rem;
         font-size: 1.2rem;
     }
         .card-desc {
-        font-size: 0.7rem;
-        font-weight: 500;
-        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 90%;
         color: #333;
+        line-height: 1.2;
+    }
+    .desc-ul{
+      margin-left: -3rem;
     }
 
 
@@ -2846,6 +2952,10 @@ font-size: 1.2rem;
           .review {
         font-size: 0.8rem;
         width: 100%;
+    }
+
+    #results{
+      margin: 0 auto ;
     }
 }
 
@@ -2859,4 +2969,24 @@ font-size: 1.2rem;
     width: 4rem;
     
   }
+ .desc-ul{
+      margin-left: -2.8rem;
+    }
+
+        .services-list {
+        
+        gap: 2rem;
+        padding-left: 16rem;
+        
+    }
+
+        .service-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin-left: -6rem;
+        min-width: 10rem;
+    }
+
 }
