@@ -200,7 +200,7 @@ a{
     .wrapper-2 .item {
         width: 350px;
         height: 400px;
-        animation-duration: 3s;
+        
     }
 
     @keyframes scrollLeft2 {
