@@ -599,6 +599,15 @@ a{
   right: 4rem;
 }
 
+@media screen and (max-width: 1530px){
+.second-text-section{
+
+  bottom:3rem;
+ 
+}
+}
+
+
 .disclaimer{
   display: flex;
   flex-direction: column;
